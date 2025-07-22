@@ -1,0 +1,725 @@
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* ===== HERO SECTION ===== */
+.heroSection {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #111, #000);
+}
+
+.heroContent {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.heroImage {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.heroTitle {
+  font-size: 36px;
+  margin-top: 30px;
+  color: gold;
+}
+
+.heroSubtitle {
+  font-size: 18px;
+  margin: 15px 0 30px;
+  color: #ccc;
+}
+
+.heroButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primaryButton {
+  background-color: gold;
+  color: #000;
+}
+
+.primaryButton:hover {
+  background-color: #ffd700;
+}
+
+.secondaryButton {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid gold;
+}
+
+.secondaryButton:hover {
+  background-color: #444;
+}
+
+/* ===== ABOUT SECTION ===== */
+.aboutSection {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #111;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.aboutImage {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.aboutText {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #ccc;
+  max-width: 700px;
+}
+
+/* ===== SECTION TITLE ===== */
+.sectionTitle {
+  font-size: 28px;
+  color: gold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ===== FEATURES SECTION ===== */
+.featuresSection {
+  background-color: #000;
+  padding: 60px 20px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.featureCard {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 1px solid #333;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+}
+
+.featureIcon {
+  font-size: 30px;
+  color: gold;
+  margin-bottom: 15px;
+}
+
+.featureTitle {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.featureDescription {
+  font-size: 15px;
+  color: #ccc;
+}
+
+/* ===== TRADING SECTION ===== */
+.tradingSection {
+  background-color: #111;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tradingImage {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tradingText {
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* ===== CALCULATOR SECTION ===== */
+.calculatorSection {
+  background: #000;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.calculatorBox {
+  background: #111;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  border: 1px solid #333;
+}
+
+.calcInput {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #666;
+  background: #000;
+  color: #fff;
+}
+
+.calcResult {
+  font-size: 20px;
+  color: gold;
+}
+
+/* ===== HOW IT WORKS ===== */
+.howItWorksSection {
+  padding: 60px 20px;
+  background: #111;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.stepCard {
+  background: #000;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stepCard h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: gold;
+}
+
+.stepCard p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonialsSection {
+  padding: 60px 20px;
+  background: #000;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.testimonialCard {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  color: #ccc;
+  font-style: italic;
+}
+
+.testimonialAuthor {
+  margin-top: 15px;
+  font-size: 14px;
+  color: gold;
+}
+
+/* ===== WHY CHOOSE US ===== */
+.whyChooseSection {
+  background: #111;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.whyList {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+  color: #ccc;
+}
+
+.whyList li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* ===== REFERRAL SECTION ===== */
+.referralSection {
+  background: #000;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.referralText {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* ===== PARTNERS SECTION ===== */
+.partnersSection {
+  background: #111;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.partnerLogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* ===== FAQ SECTION ===== */
+.faqSection {
+  background: #000;
+  padding: 60px 20px;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.faqGrid h4 {
+  color: gold;
+  margin-bottom: 5px;
+}
+
+.faqGrid p {
+  color: #ccc;
+  font-size: 15px;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contactSection {
+  background: #111;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contactText {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.contactEmail {
+  color: gold;
+  font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 14px;
+  border-top: 1px solid #222;
+}
+
+/* ===== RESPONSIVE FIXES ===== */
+@media (max-width: 600px) {
+  .heroTitle {
+    font-size: 28px;
+  }
+
+  .heroSubtitle {
+    font-size: 16px;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .calcInput {
+    font-size: 14px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+.chatSupport {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffc107;
+  color: #000;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 999;
+}
+
+.chatSupport:hover {
+  transform: scale(1.1);
+  background-color: #ffca28;
+}
+
+.statsSection {
+  padding: 60px 20px;
+  text-align: center;
+  background: #0e0e0e;
+  color: #fff;
+}
+
+.statsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.statCard {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: bold;
+  color: gold;
+}
+
+.statLabel {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.teamSection {
+  padding: 60px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.teamGrid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.teamCard {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-5px);
+}
+
+.teamImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teamName {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: gold;
+}
+
+.teamRole {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+
+.languageSelector {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.languageSelector select {
+  background-color: #222;
+  color: gold;
+  border: 1px solid gold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+
+.videoSection {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.videoWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: gold;
+  color: #111;
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  font-weight: bold;
+  animation: popupFadeIn 0.5s ease-in-out;
+}
+
+.popup a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.popupClose {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+@keyframes popupFadeIn {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+.trustSection {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.trustBadges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
+}
+
+.badge p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+
+.faqGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.faqItem {
+  border: 1px solid gold;
+  border-radius: 8px;
+  padding: 15px;
+  background: #111;
+  cursor: pointer;
+}
+
+.faqQuestion {
+  font-weight: bold;
+  color: gold;
+}
+
+.faqAnswer {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+
+
+
+
+.newsletterSection {
+  padding: 60px 20px;
+  background: #393838;
+  text-align: center;
+}
+
+.newsletterForm {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletterForm input[type="email"] {
+  padding: 12px 16px;
+  width: 300px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.newsletterForm button {
+  padding: 12px 20px;
+  background-color: #004aad;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletterForm button:hover {
+  background-color: #00388c;
+}
+
+.newsletterSection {
+  padding: 60px 20px;
+  background-color: #111;
+  text-align: center;
+  color: #fff;
+}
+
+.newsletterForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletterInput {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid gold;
+  font-size: 16px;
+  color: #000;
+}
+
+.thankYouMessage {
+  margin-top: 15px;
+  color: gold;
+  font-weight: bold;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.realStatsSection {
+  background-color: #0a0a0a;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.realStatsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.realStatCard {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid gold;
+  color: #fff;
+}
+
+.realStatCard h3 {
+  font-size: 2rem;
+  color: gold;
+}
+
+.realStatCard p {
+  font-size: 1rem;
+  margin-top: 10px;
+}

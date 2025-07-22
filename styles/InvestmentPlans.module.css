@@ -1,0 +1,91 @@
+.container {
+  background-color: #121212;
+  min-height: 100vh;
+  padding: 40px;
+  color: #fff;
+  animation: fadeIn 1s ease-in;
+}
+
+.header {
+  font-size: 36px;
+  color: #ffc107;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.plansWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.planCard {
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  width: 300px;
+  background: #1e1e1e;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px #ffc107;
+}
+
+.planTitle {
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.investButton {
+  margin-top: 15px;
+  background-color: #ffc107;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.investButton:hover {
+  background-color: #e6b800;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #1e1e1e;
+  padding: 30px;
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.closeButton {
+  background-color: #ffc107;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
